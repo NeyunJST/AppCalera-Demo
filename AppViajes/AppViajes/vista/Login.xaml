@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Login"
+             x:Class="AppViajes.vista.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Acceso al Sistema" FontSize="20" HorizontalTextAlignment="Center" />
+            <Image Source="soyuz02.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Grid Margin="20,80,20,200">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                
+                </Grid.RowDefinitions>
+
+                <Label Text="Usuario" VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
+                <Entry Grid.Column="1" Grid.Row="0" />
+
+                <Label Text="Contraseña" VerticalOptions="Center" Grid.Column="0" Grid.Row="1" />
+                <Entry Grid.Column="1" Grid.Row="1" IsPassword="True" />
+
+                <Button Text="Acceso" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" />
+
+            </Grid>
+            <Label Text="Nos esmeramos en la calidad de servicio" HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

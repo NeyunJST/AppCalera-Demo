@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppViajes.vista.Mensaje">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Envío de mensaje" FontSize="20" FontAttributes="Bold" TextColor="Blue"
+                   HorizontalOptions="Center" Margin="20"></Label>
+            <Image Source="rhsoftperu.jpg" Margin="20" />
+            <Label Text="Celular" FontSize="Medium"></Label>
+            <Entry x:Name="txtCel" Text="977686308" ></Entry>
+            <Label Text="Mensaje" FontSize="Medium"></Label>
+            <Entry x:Name="txtMen"></Entry>
+            <Button x:Name="btnEnvio" Text="Envío" BackgroundColor="#1690F4" TextColor="White"
+                Clicked="btnEnvio_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

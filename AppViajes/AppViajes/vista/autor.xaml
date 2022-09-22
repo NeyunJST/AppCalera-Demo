@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Autor"
+             x:Class="AppViajes.vista.autor">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Autor"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="Remigio Huarcaya Almeyda"
+                HorizontalOptions="Start" FontSize="Medium" />
+            <Label Text="Correo"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="rshuarcaya@hotmail.com"
+                HorizontalOptions="Start" FontSize="Medium" />
+            <Label Text="Canal personal de tecnología"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+
+                        <Span Text="Canal youtube" TextColor="Blue" FontSize="Medium" TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/channel/UCtT-fSURUi6dGyqLFdQ6IwA" />
+                            </Span.GestureRecognizers>
+                        </Span>
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

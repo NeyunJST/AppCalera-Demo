@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppViajes.vista.Motorizados">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            
+            <Label Text="APIs" FontSize="Medium" HorizontalTextAlignment="Center" />
+            
+            <Button x:Name="btn_api" Text="Listado API" Clicked="btn_api_Clicked" />
+            <ListView x:Name="Listado_Motorizado" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Margin="10">
+                                    <Grid Margin="20,5,20,5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="2*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+
+                                        <Label Text="Nombres" TextColor="Blue" VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
+                                        <Label Text="{Binding nom_mot}" Grid.Column="1" Grid.Row="0" />
+
+                                        <Label Text="Apellidos" VerticalOptions="Center" Grid.Column="0" Grid.Row="1" />
+                                        <Label Text="{Binding nom_mot}" Grid.Column="1" Grid.Row="1" />
+
+                                        <Label Text="DNI" VerticalOptions="Center" Grid.Column="0" Grid.Row="2" />
+                                        <Label Text="{Binding dni_mot}" Grid.Column="1" Grid.Row="2" />
+
+                                        <Label Text="Celular" VerticalOptions="Center" Grid.Column="0" Grid.Row="3" />
+                                        <Label Text="{Binding cel_mot}" Grid.Column="1" Grid.Row="3" />
+                                    </Grid>
+
+
+
+                                    
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                        
+                        
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
