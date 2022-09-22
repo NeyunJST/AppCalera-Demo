@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppViajes.Android", "AppViajes\AppViajes.Android\AppViajes.Android.csproj", "{3DD19EC2-3E00-4DB0-8021-16E6CEC62D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppViajes", "AppViajes\AppViajes\AppViajes.csproj", "{2F5BAAE8-F75E-44DD-861E-CF3ED6092433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppViajes", "AppViajes\AppViajes\AppViajes.csproj", "{2F5BAAE8-F75E-44DD-861E-CF3ED6092433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
