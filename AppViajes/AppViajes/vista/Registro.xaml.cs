@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace AppViajes.vista
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class Registro : ContentPage
     {
-        public Login()
+        public Registro()
         {
             InitializeComponent();
-        }
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Registro());
         }
     }
 }

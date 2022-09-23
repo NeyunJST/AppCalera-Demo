@@ -1,32 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
              Title="La Calera"             
+                    
              x:Class="AppViajes.MainPage">
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="Barra" IconImageSource="Cmenu.png" Clicked="Barra_Clicked" Text="Menú"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <Image Source="logo.png" 
-               HeightRequest="200"
-               WidthRequest="250"
-               Margin="0,10,0,0"
-               HorizontalOptions="CenterAndExpand"/>
-        <Image Source="Cinicio.jpg" 
-               HeightRequest="200"
-               WidthRequest="400"
-               Margin="0,10,0,0"
-               HorizontalOptions="CenterAndExpand"/>
-        <Button x:Name="btnAcceso" Text="Acceso" TextColor="White" BackgroundColor="#0e782c" 
-                    Margin="20,100,20,0" Clicked="btnAcceso_Clicked" WidthRequest="250" HeightRequest="50" CornerRadius="50" VerticalOptions="CenterAndExpand" 
-                    />
+    <ContentPage.Content>
+        <StackLayout>
 
-        <Grid Margin="10,20,10,4" VerticalOptions="EndAndExpand">
+            <CarouselView ItemsSource="{Binding Foto}" IndicatorView="Indicador">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame HasShadow="false" BorderColor="DarkGray"
+                               CornerRadius="5" Margin="20"
+                               HeightRequest="500" WidthRequest="400"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                                <StackLayout>
 
-            
-            <Label Text="La CaleraApp Versión 1.1" FontSize="16" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" />
-        </Grid>
-    </StackLayout>
+                                    <Image Source="{Binding imagen}"                                       
+                                       HeightRequest="300" WidthRequest="300"
+                                       HorizontalOptions="Center" 
+                                       Aspect="AspectFill"/>
+
+
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="Indicador" 
+                       IndicatorColor="LightGray"
+                       SelectedIndicatorColor="DarkGray"
+                       HorizontalOptions="Center" 
+                       Margin="0,20"/>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
