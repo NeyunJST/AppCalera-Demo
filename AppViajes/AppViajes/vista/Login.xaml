@@ -5,8 +5,8 @@
              x:Class="AppViajes.vista.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Acceso al Sistema" FontSize="20" HorizontalTextAlignment="Center" />
-            <Image Source="soyuz02.jpg" HeightRequest="100" WidthRequest="100"/>
+            <Label Text="Acceso al Sistema" Font="Bold,20" HorizontalTextAlignment="Center" Margin="0,20,0,0" TextColor="#7D0F89"/>
+            <Image Source="logo.jpg" HeightRequest="80" WidthRequest="100" Margin="0,40,0,0"/>
             <Grid Margin="20,80,20,200">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -25,7 +25,7 @@
                 <Label Text="Contraseña" VerticalOptions="Center" Grid.Column="0" Grid.Row="1" />
                 <Entry Grid.Column="1" Grid.Row="1" IsPassword="True" />
 
-                <Button Text="Acceso" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" />
+                <Button Text="Acceso" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" />
 
             </Grid>
             <Label Text="Nos esmeramos en la calidad de servicio" HorizontalTextAlignment="Center" />
