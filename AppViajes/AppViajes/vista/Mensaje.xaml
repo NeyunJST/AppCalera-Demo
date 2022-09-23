@@ -3,16 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppViajes.vista.Mensaje">
     <ContentPage.Content>
-        <StackLayout Padding="15">
-            <Label Text="Envío de mensaje" FontSize="20" FontAttributes="Bold" TextColor="Blue"
-                   HorizontalOptions="Center" Margin="20"></Label>
-            <Image Source="rhsoftperu.jpg" Margin="20" />
-            <Label Text="Celular" FontSize="Medium"></Label>
-            <Entry x:Name="txtCel" Text="977686308" ></Entry>
-            <Label Text="Mensaje" FontSize="Medium"></Label>
-            <Entry x:Name="txtMen"></Entry>
-            <Button x:Name="btnEnvio" Text="Envío" BackgroundColor="#1690F4" TextColor="White"
-                Clicked="btnEnvio_Clicked" />
+        <StackLayout Padding="10">
+                <Label Text="Emergencia" FontSize="20" FontAttributes="Bold" TextColor="#0e782c"
+                   HorizontalOptions="Center" Margin="0,20,0,60"/>
+            <Grid HeightRequest="280" VerticalOptions="CenterAndExpand">
+                <Label Text="Tipo de suceso" FontSize="Medium" Grid.Row="0"/>
+                <Picker Title="Motivo del mensaje/llamada" x:Name="pickerTelf" SelectedItem="{Binding SelectedColorName, Mode=OneWay}" Grid.Row="1"></Picker>
+                <Label Text="Mensaje" FontSize="Medium" Grid.Row="2"/>
+                <Entry x:Name="txtMen" Grid.Row="3"/>
+                <Button x:Name="btnEnvio" Text="Envío" BackgroundColor="#0e782c" TextColor="White"
+                    Clicked="btnEnvio_Clicked" Margin="0,0,0,0"  WidthRequest="250" 
+                        HeightRequest="50" CornerRadius="50" VerticalOptions="EndAndExpand" Grid.Row="4"/>
+            </Grid>
+
+            <Button x:Name="btnLlamar" Text="Llamar" BackgroundColor="#862631" TextColor="White"
+                Clicked="btnLlamar_Clicked" Margin="0,10,0,10"  WidthRequest="250" 
+                    HeightRequest="50" CornerRadius="50" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
