@@ -5,19 +5,20 @@
              x:Class="AppViajes.vista.autor">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Padding="10">
-            <!--Datos del proyecto-->
-            <Label Text="TopicApp"
+            <StackLayout Padding="10">
+                <!--Datos del proyecto-->
+                <Label Text="TopicApp"
                 HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0,0,0,20"/>
-            <Label FontSize="Medium">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="Esta aplicación fue creada solamente para fines eductivos. Su uso es exclusivo de y para " />
-                        <Span Text="SENATINOS. " FontAttributes="Italic" FontSize="16"/>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-            <Label FontSize="Medium">
+
+                <Label FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Esta aplicación fue creada solamente para fines eductivos. Su uso es exclusivo de y para " />
+                            <Span Text="SENATINOS. " FontAttributes="Italic" FontSize="16"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label FontSize="Medium">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="TopicApp Tiene como objetivo brindarte una conexion directa, más rápida y eficiente con el área " />
@@ -29,7 +30,9 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <!-- Autores-->
+                
+
+                <!-- Autores-->
             <Label Text="Autores"
                 HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0,20,0,20"/>
             <Label Text="Jose Manuel Osores Garrido"

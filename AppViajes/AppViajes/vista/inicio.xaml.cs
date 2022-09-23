@@ -17,34 +17,10 @@ namespace AppViajes.vista
             InitializeComponent();
         }
 
-        private async void btnTerminales_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Terminales());
-        }
-
-        private async void btnServicios_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Servicio());
-        }
 
         private async void btnIntranet_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Login());
-        }
-
-        private async void btnAPI_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Motorizados());
-        }
-
-        private async void btnItinerario_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Itinerario());
-        }
-
-        private async void btnCounter_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Counters());
         }
 
         private async void btnMensaje_Clicked(object sender, EventArgs e)
