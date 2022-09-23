@@ -4,21 +4,21 @@
              Title="Servicio de Viaje"
              x:Class="AppViajes.vista.inicio">
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="btnIntranet" IconImageSource="login.png" Text="Intranet" Clicked="btnIntranet_Clicked" />
+        <ToolbarItem x:Name="btnIntranet" IconImageSource="Clogin.png" Text="Intranet" Clicked="btnIntranet_Clicked" />
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <StackLayout Margin="10">
-            <Label Text="Menú Principal" FontSize="Medium" TextColor="Brown" Margin="0,20,0,20"               
+            <Label Text="Menú Principal" Font="Bold,20" TextColor="#7D0F89" Margin="0,20,0,20"               
                 HorizontalOptions="CenterAndExpand" />
-            <Image Source="soyuz02.jpg" HeightRequest="100" WidthRequest="100" Margin="0,20,20,40" />
+            <Image Source="logo.jpg" HeightRequest="80" WidthRequest="100" Margin="0,20,20,40" />
             <Button x:Name="btnTerminales" TextTransform="None" FontSize="Medium" Text="Terminales" Clicked="btnTerminales_Clicked"/>
             <Button x:Name="btnAPI" TextTransform="None" FontSize="Medium" Text="Motorizados" Clicked="btnAPI_Clicked"/>
             <Button x:Name="btnServicios"  TextTransform="None" FontSize="Medium" Text="Servicios de pago" Clicked="btnServicios_Clicked"/>
             <Button x:Name="btnItinerario"  TextTransform="None" FontSize="Medium" Text="Registro de Itinerario" Clicked="btnItinerario_Clicked"/>
-            <Button x:Name="btnCounter"  TextTransform="None" FontSize="Medium" BackgroundColor="#1690F4" TextColor="White" Text="Registro de Counter" Clicked="btnCounter_Clicked"/>
-            <Button x:Name="btnMensaje"  TextTransform="None" FontSize="Medium" BackgroundColor="#1690F4" TextColor="White" Text="Envío de mensaje" Clicked="btnMensaje_Clicked"/>
-            <Button x:Name="btnAutor"  TextTransform="None" FontSize="Medium" BackgroundColor="#1690F4" TextColor="White" Text="Autor" Clicked="btnAutor_Clicked"/>
+            <Button x:Name="btnCounter"  TextTransform="None" FontSize="Medium" Text="Registro de Counter" Clicked="btnCounter_Clicked"/>
+            <Button x:Name="btnMensaje"  TextTransform="None" FontSize="Medium" Text="Envío de mensaje" Clicked="btnMensaje_Clicked"/>
+            <Button x:Name="btnAutor"  TextTransform="None" FontSize="Medium" Text="Autor" Clicked="btnAutor_Clicked"/>
             
         </StackLayout>
     </ContentPage.Content>
