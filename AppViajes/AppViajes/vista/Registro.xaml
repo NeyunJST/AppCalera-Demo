@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Registro"
+             x:Class="AppViajes.vista.Registro">
+    <ContentPage.Content>
+        <Grid>
+
+            <Image Source="Cfondoregistro.jpg" Aspect="AspectFill" />
+            <BoxView Color="#E7F6E6" Opacity="0.9"></BoxView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="Logo.png" WidthRequest="100" HeightRequest="90" Margin="0,80,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,0">
+                    <Entry Placeholder="Nombre" PlaceholderColor="#2c0e78"/>
+                    <Entry Placeholder="Apellido" PlaceholderColor="#2c0e78"/>
+                    <Entry Placeholder="Sexo" PlaceholderColor="#2c0e78"/>
+                    <Entry Placeholder="Edad" PlaceholderColor="#2c0e78"/>
+                    <Entry Placeholder="Correo eléctronico" PlaceholderColor="#2c0e78"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="#2c0e78" IsPassword="True"/>
+                    <Entry Placeholder="Confirmar Contraseña" PlaceholderColor="#2c0e78" IsPassword="True"/>
+
+                    <Button Text="Registrarse" BorderRadius="20" TextColor="#E7F6E6" Margin="0,30,0,0"/>
+  
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
