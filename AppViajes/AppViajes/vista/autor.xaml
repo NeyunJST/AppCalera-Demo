@@ -1,34 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Autor"
+             Title="Sobre TopicApp"
              x:Class="AppViajes.vista.autor">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Autor"
-                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="Remigio Huarcaya Almeyda"
-                HorizontalOptions="Start" FontSize="Medium" />
-            <Label Text="Correo"
-                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
-            <Label Text="rshuarcaya@hotmail.com"
-                HorizontalOptions="Start" FontSize="Medium" />
-            <Label Text="Canal personal de tecnología"
-                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" />
-            <Label>
+        <ScrollView>
+        <StackLayout Padding="10">
+            <!--Datos del proyecto-->
+            <Label Text="TopicApp"
+                HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0,0,0,20"/>
+            <Label FontSize="Medium">
                 <Label.FormattedText>
                     <FormattedString>
-
-                        <Span Text="Canal youtube" TextColor="Blue" FontSize="Medium" TextDecorations="Underline">
-                            <Span.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding TapCommand}"
-                                          CommandParameter="https://www.youtube.com/channel/UCtT-fSURUi6dGyqLFdQ6IwA" />
-                            </Span.GestureRecognizers>
-                        </Span>
-
+                        <Span Text="Esta aplicación fue creada solamente para fines eductivos. Su uso es exclusivo de y para " />
+                        <Span Text="SENATINOS. " FontAttributes="Italic" FontSize="16"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-        </StackLayout>
+            <Label FontSize="Medium">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="TopicApp Tiene como objetivo brindarte una conexion directa, más rápida y eficiente con el área " />
+                        <Span Text="Tópico " FontAttributes="Italic" FontSize="16"/>
+                        <Span Text="mejorando la comunicación y la captación de emergencias. Para más información " />
+                        <!--<Span Text="Los derechos de su creacion son totalmente reservados  " />-->
+                        <Span Text="ingresa aquí."
+                  TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <!-- Autores-->
+            <Label Text="Autores"
+                HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0,20,0,20"/>
+            <Label Text="Jose Manuel Osores Garrido"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Julian Felipe Salas Tineo"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Rodrigo Herrera Villaroel"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+            <!--Informacion-->            
+            <Label Text="Contactanos"
+                HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0,20,0,20"/>
+            <Label Text="Vía correo: "
+                HorizontalOptions="Start" FontSize="Medium" Padding="0,0,0,5"/>
+            <Label Text="   julian.salas.t7@gmail.com"
+                HorizontalOptions="Start" FontSize="Small" />
+            <Label Text="   rshuarcaya@hotmail.com"
+                HorizontalOptions="Start" FontSize="Small" />
+            <Label Text="Visitanos en nuestras redes: "
+                HorizontalOptions="Start" FontSize="Medium" Padding="0,5,0,5"/>
+            <Label Text="   no tenemos :,("
+                HorizontalOptions="Start" FontSize="Small" />
+            <Label Text="GITHUB del proyecto"
+                HorizontalOptions="Start" FontSize="Medium" FontAttributes="Bold" Padding="0,5,0,5"/>
+            <Label Padding="0,0,0,20">
+                <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="    "/>
+                            <Span Text="AppCalera-Demo" TextColor="#0e782c" FontSize="Medium" TextDecorations="Underline" 
+                                  FontAttributes="Italic">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://github.com/NeyunJST/AppCalera-Demo" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                </Label.FormattedText>
+            </Label>
+                <Label TextColor="Gray" FontSize="Medium" HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Todos los derechos reservados " FontSize="12"/>
+                            <Span Text="@Copyrigth" FontAttributes="Italic" FontSize="14"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
