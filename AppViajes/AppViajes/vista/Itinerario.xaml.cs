@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +12,10 @@ namespace AppViajes.vista
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Itinerario : ContentPage
     {
-        
+
         public Itinerario()
         {
+
             InitializeComponent();            
 
         }

@@ -1,4 +1,5 @@
 ﻿using AppViajes.modelo;
+using AppViajes.vista;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,21 +26,38 @@ namespace AppViajes
             Foto = new List<ClsImagenes>();
             Foto.Add(new ClsImagenes
             {
-
                 imagen = "Cfondologin.jpg",
             });
             Foto.Add(new ClsImagenes
             {
                 imagen = "Cfondoregistro.jpg",
             });
+            Foto.Add(new ClsImagenes
+            {
+                imagen = "Calmacen.jpg",
+            });
+            Foto.Add(new ClsImagenes
+            {
+                imagen = "Cfundador.jpg",
+            });
+            Foto.Add(new ClsImagenes
+            {
+                imagen = "Cfrutos.jpg",
+            });
+
             BindingContext = this;
         }
-
+        private async void btnIntranet_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new vista.Login());
+        }
 
         private async void Barra_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new vista.inicio());
         }
+
+
 
         private async void btnAcceso_Clicked(object sender, EventArgs e)
         {

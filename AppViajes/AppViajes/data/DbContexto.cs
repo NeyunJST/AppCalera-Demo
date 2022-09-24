@@ -31,6 +31,10 @@ namespace AppViajes.data
         {
             return await cnx.Table<ClsCounters>().ToListAsync();
         }
+        public async Task<int> modificar(ClsCounters registro)
+        {
+            return await cnx.UpdateAsync(registro);
+        }
 
     }
 }

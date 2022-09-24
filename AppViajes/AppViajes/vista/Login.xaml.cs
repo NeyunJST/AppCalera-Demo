@@ -20,5 +20,10 @@ namespace AppViajes.vista
         {
             await Navigation.PushAsync(new Registro());
         }
+        private async void btnInicio_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new inicio());
+        }
+
     }
 }
