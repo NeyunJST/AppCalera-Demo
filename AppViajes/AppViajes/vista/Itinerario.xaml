@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppViajes.vista.Itinerario">
@@ -8,21 +8,22 @@
     <ContentPage.Content>
         <StackLayout Margin="10,0,10,0" VerticalOptions="CenterAndExpand">
             <Label Text="Agendar una Cita" FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" Margin="10,10,10,60" />
-
+       
             <Label Text="Fecha" FontAttributes="Bold" FontSize="Medium" />
             <DatePicker x:Name="startDatePicker"
                     Format="D" />
             <!--DateSelected="OnDateSelected"-->
 
+            
             <Label Text="Hora" FontAttributes="Bold" FontSize="Medium" />
             <TimePicker x:Name="_timePicker"
                     Time="10:00:00"
                     Format="T"/>
             <!-- PropertyChanged="OnTimePickerPropertyChanged"-->
-
+            
             <Label Text="Motivo de la cita" FontAttributes="Bold" FontSize="Medium" />
             <Entry x:Name="txtDesc" />
-
+            
             <Label Text="Nombre y Apellidos" FontAttributes="Bold" FontSize="Medium" />
             <Entry x:Name="txtName" />
 
