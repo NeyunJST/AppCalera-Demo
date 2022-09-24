@@ -6,7 +6,7 @@
              x:Class="AppViajes.MainPage">
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="Barra" IconImageSource="Cemergencia.png" Text="Menú"/>
+        <ToolbarItem x:Name="Barra" IconImageSource="Cemergencia.png" Text="Menú" Clicked="btnLlamar_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

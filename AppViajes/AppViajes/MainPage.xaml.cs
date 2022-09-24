@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -64,6 +65,17 @@ namespace AppViajes
             await Navigation.PushAsync(new vista.inicio());
         }
 
+        private void btnLlamar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                PhoneDialer.Open("923697331");
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("No se pudo realizar la llamada", "intentelo más tarde", "OK");
+            }
+        }
 
     }
 }
